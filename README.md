@@ -90,8 +90,8 @@ ai=Sequential([
     Dense(1)
 ])
 ai.compile(optimizer='rmsprop',loss='mse')
-ai.fit(X_train1,y_train,epochs=1000)
-ai.fit(X_train1,y_train,epochs=1000)
+ai.fit(X_train1,y_train,epochs=2000)
+
 
 ## Plot the loss
 loss_df = pd.DataFrame(ai.history.history)
